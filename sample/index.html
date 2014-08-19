@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery slideOverBackground Plugin | Demo</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="slideOverBackground/jquery.slideOverBackground.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/site.css" type="text/css" media="all" />
+    <script src="js/jquery-1.9.0.min.js"></script>
+    <script src="slideOverBackground/jquery.slideOverBackground.js"></script>
+    <script src="js/site.js"></script>
+  </head>
+  <body>
+    <div id="mainElement">
+      <div style="margin: 50px 50px; color: #fff; text-shadow: 1px 1px 1px #000; font-family: Verdana;">
+        <div style="font-size: 14px; background-color: rgba(0,0,0,0.5); display: inline-block; padding: 5px;">
+          <div style="font-weight: bold;">jQuery slideOverBackground Plugin | Demo</div>
+          This is a demonstration page for the jQuery Plugin <span style="font-style: italic;">slideOverBackground</span>
+        </div>
+        <div style="margin-top: 20px;">
+          In your HTML :
+        </div>
+        <div style="display: inline-block; background-color: #000; color: #fff; padding: 5px; border: 1px solid #fff; margin-top: 2px;">
+<pre>&lt;html&gt;
+  &lt;head&gt;
+    &lt;link rel="stylesheet" href="slideOverBackground/jquery.slideOverBackground.css" type="text/css" media="all" /&gt;
+    &lt;script src="js/jquery-1.9.0.min.js"&gt;&lt;/script&gt;
+    &lt;script src="slideOverBackground/jquery.slideOverBackground.js"&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id="mainElement"&gt;
+      Your contents here.
+    &lt;div&gt;
+  &lt;/body&gt;
+&lt;/html><pre></div>
+        <div style="margin-top: 20px;">
+          In your JavaScript :
+        </div>
+        <div style="display: inline-block; background-color: #000; color: #fff; padding: 5px; border: 1px solid #fff; margin-top: 2px;">
+<pre>//slideOverBackground initialization
+$("#mainElement").slideOverBackground({
+  pictures: ["img/pic1.jpg", "img/pic2.jpg", "img/pic3.jpg"],  //list of background images
+  delay: 5000, //delay between transitions (optional)
+  transitionTime: 1000 //time of transition (optional)
+});<pre></div>
+        <div>
+          <a href="slideOverBackground.zip" style="display: inline-block; color: #fff; background-color: #5e69cd; padding: 10px; margin: 20px 0px 10px 0px;">Download</a>
+        </div>
+        <div>
+          <a href="http://perraudin.fr/paypal/donate.php" target="_blank" style="display: inline-block; color: #fff; background-color: #5e69cd; padding: 10px; margin: 20px 0px 10px 0px;">Donate</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
