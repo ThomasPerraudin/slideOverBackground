@@ -1,4 +1,16 @@
+/**
+ * jQuery slideOverBackground Plugin (jquery.slideOverBackground.js)
+ * @version 1.0.0
+ * @author Thomas Perraudin <softwares@perraudin.fr>
+ * @website http://thomas.perraudin.fr
+ * @license MIT
+ */
 
+body{
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
 
 .slideOverForeground{
   position: absolute;
