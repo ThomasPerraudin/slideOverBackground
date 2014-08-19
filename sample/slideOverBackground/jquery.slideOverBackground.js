@@ -16,10 +16,11 @@
     if(typeof(properties.transitionTime)=="undefined") properties.transitionTime = 1000;
     
     $(this).addClass("slideOverForeground");
+    jqWrapper = $("<div class='slideOverBackground-wrapper'></div>");
     jqStaticImg = $("<img class='slideOverBackground' src=\""+ properties.pictures[0] +"\" />");
-    $(this).before(jqStaticImg);
     jqTransitionImg = $("<img class='slideOverBackgroundTrantision' src=\""+ properties.pictures[1] +"\" />");
-    $(this).before(jqTransitionImg);
+    jqWrapper.append(jqStaticImg).append(jqTransitionImg).append($(this).clone());
+    $(this).before(jqWrapper).remove();
     
     var i = 1;
     changeBG = function slideOverBackgroundChange(){
